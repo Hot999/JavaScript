@@ -60,6 +60,8 @@ const resetGame = () => {
   guesses.textContent = '';
   lastResult.style.backgroundColor = "white";
   resetButton.remove();
+  let randomNumber = Math.floor(Math.random() * 100) + 1;
+
 };
 guessSubmit.addEventListener('click', () => {
   checkGuess();
