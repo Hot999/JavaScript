@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Number guessing game</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Игра Угадайка чисел</h1>
+
+    <p>Мы выбрали случайное число от 1 до 100. Посмотрим, сможете ли вы угадать его за 10 ходов или меньше. Мы сообщим вам, было ли ваше предположение слишком высоким или слишком низким.</p>
+
+    <div class="form">
+      <label for="guessField">Введите предположение: </label>
+      <input type="number" id="guessField" class="guessField">
+      <input type="submit" value="клик!" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
